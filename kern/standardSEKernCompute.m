@@ -25,6 +25,9 @@ function [k, k2] = standardSEKernCompute(kern, x, x2)
 % COPYRIGHT : Steven Atkinson, 2016
 
 % KERN
+
+
+
     
 if nargin < 3
   n2 = dist2(x, x);
