@@ -1,4 +1,4 @@
-function [X, sigma2, W] = ppcaEmbed(Y, dims)
+function [X, sigma2, W, v] = ppcaEmbed(Y, dims)
 
 % PPCAEMBED Embed data set with probabilistic PCA.
 % FORMAT
@@ -9,6 +9,7 @@ function [X, sigma2, W] = ppcaEmbed(Y, dims)
 % RETURN X : the latent positions.
 % RETURN sigma2 : the variance not explained by the latent positions.
 % RETURN W : the matrix required to invert the transformation, Y=X*W'.
+% RETURN v : the eigenvalues of the decomposition
 %
 % COPYRIGHT : Neil D. Lawrence, 2006
 %
